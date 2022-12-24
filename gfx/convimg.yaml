@@ -1,0 +1,32 @@
+palettes:
+  - name: global_palette
+    fixed-entries:
+      - color: {index: 0, r: 202, g: 254, b: 0}
+      - color: {index: 1, r: 22, g: 22, b: 22}
+    images: automatic
+
+converts:
+  - name: sprites
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - grass.png
+      - path.png
+      - flowers.png
+      - character/forward.png
+      - character/forward_left.png
+      - character/forward_right.png
+      - character/backward.png
+      - character/backward_left.png
+      - character/backward_right.png
+      - character/side.png
+      - character/side_left.png
+      - character/side_right.png
+
+outputs:
+  - type: c
+    include-file: gfx.h
+    palettes:
+      - global_palette
+    converts:
+      - sprites
