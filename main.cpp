@@ -10,6 +10,7 @@
 #include "gfx/gfx.h"
 
 int main(){
+    // comment
     gfx_Begin();
     gfx_SetDrawBuffer();
     gfx_SetPalette(global_palette, sizeof_global_palette, 0);
